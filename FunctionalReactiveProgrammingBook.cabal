@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 48d94037c475ae5f9734df9d4477e7ebf0fea26f95572f4ad9716d4c0d2bb130
+-- hash: ecc9c0dd8bbe964e609854db03be34afcd3fead4b857877bafbfb26c795d3410
 
 name:           FunctionalReactiveProgrammingBook
 version:        0.1.0.0
@@ -27,6 +27,8 @@ source-repository head
 
 library
   exposed-modules:
+      Chap1
+      Example
       Lib
   other-modules:
       Paths_FunctionalReactiveProgrammingBook
@@ -34,6 +36,11 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , containers
+    , gi-gtk
+    , reflex
+    , reflex-gi-gtk
+    , text
   default-language: Haskell2010
 
 executable FunctionalReactiveProgrammingBook-exe
@@ -46,6 +53,11 @@ executable FunctionalReactiveProgrammingBook-exe
   build-depends:
       FunctionalReactiveProgrammingBook
     , base >=4.7 && <5
+    , containers
+    , gi-gtk
+    , reflex
+    , reflex-gi-gtk
+    , text
   default-language: Haskell2010
 
 test-suite FunctionalReactiveProgrammingBook-test
@@ -59,4 +71,9 @@ test-suite FunctionalReactiveProgrammingBook-test
   build-depends:
       FunctionalReactiveProgrammingBook
     , base >=4.7 && <5
+    , containers
+    , gi-gtk
+    , reflex
+    , reflex-gi-gtk
+    , text
   default-language: Haskell2010

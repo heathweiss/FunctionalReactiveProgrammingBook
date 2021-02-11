@@ -18,7 +18,16 @@
 # resolver: ./custom-snapshot.yaml
 # resolver: https://example.com/snapshots/2018-01-01.yaml
 resolver:
-  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/17/2.yaml
+  #url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/1.yaml
+  #url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/24.yaml
+  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/31.yaml
+  #earliest that meets base 4.13
+  
+  #url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/17/0.yaml
+  #least version for haskell-gi-base
+  
+  
+  #url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/17/2.yaml
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -35,7 +44,33 @@ packages:
 # These entries can reference officially published versions as well as
 # forks / in-progress versions pinned to a git hash. For example:
 #
-# extra-deps:
+extra-deps:
+- haskell-gi-base-0.24.5
+- haskell-gi-0.24.7
+- gi-gobject-2.0.25
+- gi-gtk-3.0.36
+- gi-gsk-4.0.2
+- gi-gio-2.0.27
+- gi-atk-2.0.22
+- gi-cairo-1.0.24
+- gi-gdk-3.0.23
+- gi-gdkpixbuf-2.0.24
+- gi-glib-2.0.24
+- gi-graphene-1.0.2
+- gi-pango-1.0.23
+- gi-harfbuzz-0.0.3
+- patch-0.0.3.2
+- reflex-0.8.0.0
+- constraints-extras-0.3.0.2
+- dependent-map-0.4.0.0
+- dependent-sum-0.7.1.0
+- some-1.0.1
+- monoidal-containers-0.6.0.1
+- prim-uniq-0.2
+- ref-tf-0.4.0.2
+- witherable-0.3.5
+- reflex-gi-gtk-0.2.0.0
+
 # - acme-missiles-0.3
 # - git: https://github.com/commercialhaskell/stack.git
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
